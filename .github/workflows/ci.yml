@@ -46,11 +46,3 @@ jobs:
           path: coverage/
           retention-days: 7
 
-      - name: Notifier Slack
-        if: always() && secrets.SLACK_WEBHOOK != ''
-        uses: slackapi/slack-github-action@v1.27.0
-        with:
-          payload: |
-            {"text": "CI ${{ job.status }} sur ${{ github.ref }}"}
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
