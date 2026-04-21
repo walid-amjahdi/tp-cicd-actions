@@ -1,0 +1,17 @@
+{
+  "name": "tp-cicd-actions",
+  "version": "1.0.0",
+  "description": "TP CI/CD avec GitHub Actions",
+  "main": "src/math.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0"
+  }
+}
